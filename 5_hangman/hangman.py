@@ -5,17 +5,17 @@ print("answer is", word)
 letters = ""
 
 while True:
-    succeed  = True
+    succeed = True
     print()
     for w in word:
         if w in letters:
             print(w, end=" ")
         else:
             print("_", end=" ")
-            succed = False
+            succeed = False
     print()
 
-    if succeed :
+    if succeed:
         print("SUCCESS")
         break
 
