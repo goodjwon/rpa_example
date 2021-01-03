@@ -16,6 +16,8 @@ import pyautogui
         => locateOnScreen("file_menu.png", confidence=0.9)
     4. 참고 : numpy 1.19.4 버그 있음 numpy 1.19.3 사용.
 """
+
+
 # file_menu_notepad = None
 # while file_menu_notepad is None:
 #     file_menu_notepad = pyautogui.locateOnScreen("note_pad_menu.png")
@@ -25,6 +27,8 @@ import pyautogui
 """
     시간 제한 설정하여 코딩.
 """
+
+
 # timeout = 10
 # start = time.time()
 # file_menu_notepad = None
@@ -41,6 +45,7 @@ import pyautogui
     함수로 변경
 """
 
+
 def find_target(imge, timeout):
     start = time.time()
     target = None
@@ -50,6 +55,7 @@ def find_target(imge, timeout):
         if end - start > timeout:
             break
     return target
+
 
 def my_click(image, timeout=30):
     target = find_target(image, timeout)
